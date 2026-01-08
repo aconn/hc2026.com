@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Holy Cross Class of 2026 - 8th Grade Graduation planning resources, calendar, and updates for parents.">
+  <meta name="keywords" content="Holy Cross, Class of 2026, graduation, 8th grade, parents">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Holy Cross Class of 2026">
+  <meta property="og:description" content="Graduation planning resources and updates for parents">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://holycross2026.com">
+
+  <title>Holy Cross Class of 2026 | Graduation Planning</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="header__logo">
+        <img src="images/logo.webp" alt="Holy Cross Catholic School" class="header__logo-img">
+        <span class="header__logo-text">Class of 2026 Graduation Site</span>
+      </a>
+
+      <nav class="nav">
+        <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+
+        <ul class="nav__list">
+          <li><a href="#calendar" class="nav__link">Calendar</a></li>
+          <li><a href="#links" class="nav__link">Resources</a></li>
+          <li><a href="#timeline" class="nav__link">Key Dates</a></li>
+          <li><a href="#faq" class="nav__link">FAQ</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__content">
+      <span class="hero__badge">🎓 Class of 2026</span>
+      <h1 class="hero__title">Holy Cross <span>Graduation</span></h1>
+      <p class="hero__subtitle">Your one-stop resource for 8th grade graduation planning</p>
+
+      <!-- Countdown Timer -->
+      <div class="countdown">
+        <div class="countdown__item">
+          <span class="countdown__number" id="countdown-days">---</span>
+          <span class="countdown__label">Days</span>
+        </div>
+        <div class="countdown__item">
+          <span class="countdown__number" id="countdown-hours">--</span>
+          <span class="countdown__label">Hours</span>
+        </div>
+        <div class="countdown__item">
+          <span class="countdown__number" id="countdown-minutes">--</span>
+          <span class="countdown__label">Minutes</span>
+        </div>
+        <div class="countdown__item">
+          <span class="countdown__number" id="countdown-seconds">--</span>
+          <span class="countdown__label">Seconds</span>
+        </div>
+      </div>
+
+      <a href="#calendar" class="hero__cta">
+        View Calendar
+        <span>↓</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Announcements Banner -->
+  <section class="announcements">
+    <div class="container announcements__inner">
+      <span class="announcements__icon">📢</span>
+      <p class="announcements__text">
+        <!-- EDIT THIS: Add your latest announcement here -->
+        <strong>Welcome!</strong> This site is your hub for all graduation-related updates. Bookmark it and check back
+        often!
+      </p>
+    </div>
+  </section>
+
+  <!-- Calendar Section -->
+  <section id="calendar" class="section calendar">
+    <div class="container">
+      <h2 class="section-title">Event Calendar</h2>
+
+      <div class="calendar__wrapper">
+        <!-- 
+          REPLACE THIS PLACEHOLDER WITH YOUR GOOGLE CALENDAR EMBED CODE
+          
+          To get your embed code:
+          1. Go to calendar.google.com
+          2. Click the gear icon → Settings
+          3. Select your calendar from the left sidebar
+          4. Scroll to "Integrate calendar"
+          5. Copy the "Embed code"
+          6. Replace the placeholder div below with the iframe
+        -->
+        <div class="calendar__placeholder">
+          <span class="calendar__placeholder-icon">📅</span>
+          <h3>Google Calendar Coming Soon</h3>
+          <p>The event calendar will be embedded here once configured.</p>
+          <p><small>See README.md for setup instructions</small></p>
+        </div>
+
+        <!-- Example embed (uncomment and replace src with your calendar):
+        <iframe 
+          src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=America/Chicago" 
+          class="calendar__embed"
+          frameborder="0" 
+          scrolling="no">
+        </iframe>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Links Section -->
+  <section id="links" class="section section--alt">
+    <div class="container">
+      <h2 class="section-title">Quick Links & Resources</h2>
+
+      <div class="links__grid">
+        <!-- Photo Upload QR Code -->
+        <div class="link-card">
+          <div class="link-card__icon">📸</div>
+          <h3 class="link-card__title">Photo Submissions</h3>
+          <p class="link-card__description">Upload photos for the graduation slideshow and yearbook</p>
+          <a href="#" class="link-card__btn">Upload Photos</a>
+          <!-- TODO: Update href with actual QR code/upload link -->
+        </div>
+
+        <!-- School Website -->
+        <div class="link-card">
+          <div class="link-card__icon">🏫</div>
+          <h3 class="link-card__title">School Website</h3>
+          <p class="link-card__description">Official Holy Cross school website and portal</p>
+          <a href="#" class="link-card__btn" target="_blank" rel="noopener">Visit Site</a>
+          <!-- TODO: Update href with actual school URL -->
+        </div>
+
+        <!-- Cap & Gown -->
+        <div class="link-card">
+          <div class="link-card__icon">👩‍🎓</div>
+          <h3 class="link-card__title">Cap & Gown</h3>
+          <p class="link-card__description">Order information and sizing details</p>
+          <a href="#" class="link-card__btn">Learn More</a>
+          <!-- TODO: Update href with ordering link -->
+        </div>
+
+        <!-- Add to Calendar -->
+        <div class="link-card">
+          <div class="link-card__icon">📆</div>
+          <h3 class="link-card__title">Save the Date</h3>
+          <p class="link-card__description">Add graduation to your personal calendar</p>
+          <button class="link-card__btn" onclick="addGraduationToCalendar()">Download .ics</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Dates Timeline -->
+  <section id="timeline" class="section">
+    <div class="container">
+      <h2 class="section-title">Key Dates</h2>
+
+      <div class="timeline">
+        <!-- 
+          ADD YOUR KEY DATES HERE
+          Copy a timeline__item block and update the date, title, and description
+        -->
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">TBD</span>
+            <h3 class="timeline__title">Cap & Gown Orders Due</h3>
+            <p class="timeline__description">Deadline to submit cap and gown orders</p>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">TBD</span>
+            <h3 class="timeline__title">Photo Submission Deadline</h3>
+            <p class="timeline__description">Last day to submit photos for the graduation slideshow</p>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">TBD</span>
+            <h3 class="timeline__title">Graduation Rehearsal</h3>
+            <p class="timeline__description">Mandatory rehearsal for all graduating students</p>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">May 20, 2026</span>
+            <h3 class="timeline__title">🎓 Graduation Day!</h3>
+            <p class="timeline__description">The big day! Ceremony details to be announced.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section section--alt">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+
+      <div class="faq__list">
+        <div class="faq__item">
+          <button class="faq__question">
+            <span>What time does the graduation ceremony start?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              The graduation ceremony is scheduled to begin at 6:00 PM on May 20, 2026. We recommend arriving early to
+              find parking and seating. (Note: Date and time may change - check back for updates.)
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">
+            <span>How many guests can each graduate invite?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              Guest limits will be announced closer to the event date. Check back here or on the school website for
+              updates on seating capacity and ticket requirements.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">
+            <span>What should my child wear under their cap and gown?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              Students should wear dress clothes under their gowns. For boys: dress pants, collared shirt, and dress
+              shoes. For girls: a dress or dress pants with a nice top, and appropriate dress shoes. Avoid overly casual
+              attire like jeans or sneakers.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">
+            <span>Where can I order the cap and gown?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              Cap and gown ordering information will be provided by the school. Details including the vendor, sizing
+              information, and payment options will be shared here and via email once available.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">
+            <span>Will the ceremony be live-streamed?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              We are exploring options for live-streaming the ceremony for family members who cannot attend in person.
+              Details will be announced as they become available.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question">
+            <span>How do I submit photos for the slideshow?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              Photo submission instructions will be shared soon. You'll be able to upload photos via a QR code link.
+              We'll be looking for baby photos, school event photos, and other memorable moments from your child's
+              journey.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title">Contact Information</h2>
+
+      <div class="contact__grid">
+        <div class="contact__card">
+          <div class="contact__icon">🏫</div>
+          <p class="contact__label">School Office</p>
+          <p class="contact__info">
+            <a href="tel:+15551234567">(555) 123-4567</a>
+          </p>
+        </div>
+
+        <div class="contact__card">
+          <div class="contact__icon">✉️</div>
+          <p class="contact__label">Graduation Committee</p>
+          <p class="contact__info">
+            <a href="mailto:graduation@holycross.edu">graduation@holycross.edu</a>
+          </p>
+        </div>
+
+        <div class="contact__card">
+          <div class="contact__icon">👤</div>
+          <p class="contact__label">Parent Coordinator</p>
+          <p class="contact__info">Name TBD</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__logo">
+        <img src="images/logo.webp" alt="Holy Cross" class="footer__logo-img">
+        <span>Class of 2026</span>
+      </div>
+      <p class="footer__text">Made with ♥ for the graduating class</p>
+      <p class="footer__updated">Last updated: January 2026</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
