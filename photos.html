@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photo Submissions - Holy Cross Class of 2026">
+    <title>Photo Submissions | Holy Cross Class of 2026</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .submission-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            padding: calc(var(--header-height) + var(--spacing-8)) var(--spacing-4) var(--spacing-12);
+        }
+
+        .qr-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-xl);
+            margin: var(--spacing-8) auto;
+        }
+
+        .submission-link {
+            display: inline-block;
+            background: var(--color-primary);
+            color: var(--color-white);
+            padding: var(--spacing-4) var(--spacing-8);
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            transition: var(--transition-base);
+        }
+
+        .submission-link:hover {
+            background: var(--color-primary-dark);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="header__logo">
+                <img src="images/logo.webp" alt="Holy Cross Catholic School" class="header__logo-img">
+                <span class="header__logo-text">Class of 2026 Graduation Site</span>
+            </a>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <li><a href="index.html#calendar" class="nav__link">Calendar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="submission-container">
+            <h1 class="section-title">Photo Submissions</h1>
+            <p style="font-size: var(--font-size-lg); color: var(--color-gray-600); margin-bottom: var(--spacing-4);">
+                Scan the QR code below or click the button to upload your photos for the graduation slideshow.
+            </p>
+
+            <img src="images/HC8GGP-400.png" alt="Scan QR Code to Upload Photos" class="qr-image">
+
+            <div>
+                <a href="https://tinyurl.com/HC8GGP" target="_blank" rel="noopener" class="submission-link">
+                    Upload Photos Now
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__logo">
+                <img src="images/logo.webp" alt="Holy Cross" class="footer__logo-img">
+                <span>Class of 2026</span>
+            </div>
+            <p class="footer__text">Made with ♥ for the graduating class</p>
+        </div>
+    </footer>
+</body>
+
+</html>

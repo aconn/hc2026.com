@@ -136,47 +136,7 @@ function initSmoothScroll() {
 // Add to Calendar (ICS File Generator)
 // ===============================================
 
-function generateICSFile(event) {
-    const { title, description, location, startDate, endDate } = event;
-
-    const formatDate = (date) => {
-        return date.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
-    };
-
-    const icsContent = `BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:-//Holy Cross 2026//Graduation//EN
-BEGIN:VEVENT
-DTSTART:${formatDate(startDate)}
-DTEND:${formatDate(endDate)}
-SUMMARY:${title}
-DESCRIPTION:${description}
-LOCATION:${location}
-END:VEVENT
-END:VCALENDAR`;
-
-    const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
-
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = `${title.replace(/\s+/g, '_')}.ics`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
-}
-
-// Make function globally available for onclick handlers
-window.addGraduationToCalendar = function () {
-    generateICSFile({
-        title: 'Holy Cross 8th Grade Graduation',
-        description: 'Class of 2026 Graduation Ceremony',
-        location: 'Holy Cross School',
-        startDate: GRADUATION_DATE,
-        endDate: new Date(GRADUATION_DATE.getTime() + 2 * 60 * 60 * 1000) // 2 hours later
-    });
-};
+// function generateICSFile and window.addGraduationToCalendar removed - replaced by Google Calendar subscription link
 
 // ===============================================
 // Animation on Scroll
