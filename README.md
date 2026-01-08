@@ -33,12 +33,15 @@ Add these DNS records at your domain registrar:
 | A | @ | 185.199.111.153 |
 | CNAME | www | yourusername.github.io |
 
-### 3. Set Up Google Calendar
+### 3. Google Calendar (Already Configured)
 
-1. Create a new Google Calendar at [calendar.google.com](https://calendar.google.com)
-2. Go to **Settings > [Your Calendar] > Integrate calendar**
-3. Copy the **Embed code**
-4. Replace the placeholder in `index.html` with your embed code
+The calendar is already embedded and linked to the Holy Cross 2026 graduation calendar.
+
+To update the calendar embed if needed:
+1. Go to [calendar.google.com](https://calendar.google.com) → Settings
+2. Select your calendar → **Integrate calendar**
+3. Copy the new **Embed code**
+4. Replace the iframe in `index.html` (around line 110)
 
 ### 4. Customize Content
 
