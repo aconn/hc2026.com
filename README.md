@@ -35,13 +35,19 @@ Add these DNS records at your domain registrar:
 
 ### 3. Google Calendar (Already Configured)
 
-The calendar is already embedded and linked to the Holy Cross 2026 graduation calendar.
+The calendar is already embedded. **However, you must ensure it is public:**
+
+1. Go to [calendar.google.com](https://calendar.google.com) on your computer.
+2. In the top right, click **Settings (gear icon)** > **Settings**.
+3. On the left sidebar, select your calendar under "Settings for my calendars".
+4. Scroll to **Access permissions for events**.
+5. Check the box **"Make available to public"**.
+   - *If you see a warning, click OK. This ensures parents can see it without logging in.*
 
 To update the calendar embed if needed:
-1. Go to [calendar.google.com](https://calendar.google.com) → Settings
-2. Select your calendar → **Integrate calendar**
-3. Copy the new **Embed code**
-4. Replace the iframe in `index.html` (around line 110)
+1. In the same Settings menu, scroll to **Integrate calendar**.
+2. Copy the **Embed code**.
+3. Replace the iframe in `index.html` (around line 110).
 
 ### 4. Customize Content
 
