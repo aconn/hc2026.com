@@ -8,9 +8,9 @@
 
 // Set your graduation date and time here
 // Format: 'YYYY-MM-DDTHH:MM:SS' (24-hour format)
-// Current setting: May 20, 2026 at 6:00 PM
+// Current setting: May 20, 2026 at 7:00 PM
 // To change: Update the date/time below and save the file
-const GRADUATION_DATE = new Date('2026-05-20T18:00:00');
+const GRADUATION_DATE = new Date('2026-05-20T19:00:00');
 
 // ===============================================
 // Countdown Timer
